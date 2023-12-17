@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from sklearn.ensemble import RandomForestClassifier
 
 # Load and preprocess data
-data = pd.read_csv('data.csv')
+data = pd.read_csv('training data.csv')
 
 # Preprocessing steps
 data['CGPA'] = data['CGPA'].map({'Below 2.00': 0, '2.00 to 2.50': 1, '2.51 to 3.00': 2, '3.01 to 3.50': 3, '3.50 to 3.99': 4, '4': 5})
